@@ -1,14 +1,21 @@
 # elasticsearch
 
-## Image
+Elasticsearchの自分用Dockerイメージ
+
+## Docker Image
 
 [grandcolline/elasticsearch](https://cloud.docker.com/repository/docker/grandcolline/elasticsearch)
 
 ## Run
 
 ```
-$ docker run --rm \
-	-p 9200:9200 \
-	-it grandcolline/elasticsearch \
+$ mkdir es_data
+$ docker-compose up -d
+```
+
+## Build
+
+```
+$ docker build -t grandcolline/elasticsearch .
 ```
 
