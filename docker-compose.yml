@@ -7,11 +7,13 @@ services:
       - 9200:9200
       - 9300:9300
     volumes:
-      - ./es_data/:/usr/share/elasticsearch/data/
+      - ./es_data/data/:/usr/share/elasticsearch/data/
+      - ./es_data/backup/:/usr/share/elasticsearch/backup/
     environment:
       - ES_JAVA_OPTS=-Xms512m -Xmx512m
       - cluster.name=docker-cluster
       - node.master=true
+      - path.repo=/usr/share/elasticsearch/backup
   kibana:
     image: docker.elastic.co/kibana/kibana-oss:6.3.2
     ports:

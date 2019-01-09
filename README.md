@@ -6,6 +6,14 @@ Elasticsearchの自分用Dockerイメージ
 
 [grandcolline/elasticsearch](https://cloud.docker.com/repository/docker/grandcolline/elasticsearch)
 
+## Plugin
+
+* analysis-kuromoji
+* analysis-icu
+* repository-s3
+* repository-gcs
+
+
 ## Run
 
 ```

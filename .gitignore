@@ -1,1 +1,5 @@
-es_data/*
+es_data/data/*
+!es_data/data/.gitkeep
+es_data/backup/*
+!es_data/backup/.gitkeep
+
