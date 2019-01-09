@@ -17,7 +17,6 @@ Elasticsearchの自分用Dockerイメージ
 ## Run
 
 ```
-$ mkdir es_data
 $ docker-compose up -d
 ```
 
